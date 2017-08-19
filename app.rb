@@ -10,8 +10,15 @@ require_relative 'class/game'
 
 def play_game(rounds, commitment)
   # die Spieler werden erstellt (siehe: class/player.rb)
-  player1 = Player.new(name = 'Dr. Watson', money = 100.00, winningnumbers = [1, 2, 4, 6], handicap = 0.7)
-  player2 = Player.new(name = 'Sherlock Holmes', money = 100.00, winningnumbers = [3, 5], handicap = 1.00)
+  player1 = Player.new( name = 'Dr. Watson',
+                        money = 100.00,
+                        winningnumbers = [1, 2, 4, 6],
+                        handicap = 0.7)
+
+  player2 = Player.new( name = 'Sherlock Holmes',
+                        money = 100.00,
+                        winningnumbers = [3, 5],
+                        handicap = 1.00)
 
   # Instanz von Game wird erstellt (siehe: class/game.rb)
   # und die zuvor erstellten Spieler als Parameter übergeben

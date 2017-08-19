@@ -44,6 +44,7 @@ class Game
     # eine zufällige Zahl wird "gezogen"
     # sample: https://ruby-doc.org/core-2.2.0/Array.html#method-i-sample
     dice = [1, 2, 3, 4, 5, 6].sample
+    # alternative: dice = (1..6).to_a.sample
 
     # Prüfe die gewürfelte Augenzahl gegen die definierten Gewinnnummern der Spieler.
     # winningnumbers wurde über attr_reader & initialize der Klasse Player vorgegeben
